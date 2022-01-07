@@ -61,7 +61,7 @@ rm -rf package/kenzo/luci-theme-ifit
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-infinityfreedom
 #git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
 #git clone https://github.com/YL2209/luci-theme-ifit.git package/lean/luci-theme-ifit
-git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
+#git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
 
 # 修改luci-theme-argon_armygreen主题渐变色，16进制RGB
 #登录页面背景颜色 透明值
@@ -115,7 +115,7 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-ap
 #其他（不清楚）
 #sed -i 's/#00FF00/#407994/g' package/lean/luci-theme-argon_armygreen/htdocs/luci-static/argon_armygreen/css/style.css
 #加载背景
-sed -i 's/#5e72e4/#407994/g' package/lean/luci-theme-argon_armygreen/htdocs/luci-static/argon_armygreen/css/style.css
+#sed -i 's/#5e72e4/#407994/g' package/lean/luci-theme-argon_armygreen/htdocs/luci-static/argon_armygreen/css/style.css
 
 
 #登陆页面右下角技术支持  跳转网站“https://github.com/openwrt/luci”   名称“可爱动漫主题”

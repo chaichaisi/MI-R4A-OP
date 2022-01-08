@@ -59,8 +59,8 @@ rm -rf package/kenzo/luci-theme-ifit
 #下载主题luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-infinityfreedom
-mv MI-R4A/2019-10-07_13.36-540p.jpg package/lean/luci-theme-infinityfreedom/luci-theme-infinityfreedom/files/htdocs/images/main_bg.jpg
-rm package/lean/luci-theme-infinityfreedom/luci-theme-infinityfreedom/files/htdocs/images/main_bg_5k.jpg
+mv $GITHUB_WORKSPACE/MI-R4A/2019-10-07_13.36-540p.jpg package/lean/luci-theme-infinityfreedom/files/htdocs/images/main_bg.jpg
+rm package/lean/luci-theme-infinityfreedom/files/htdocs/images/main_bg_5k.jpg
 
 git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
 #git clone https://github.com/YL2209/luci-theme-ifit.git package/lean/luci-theme-ifit

@@ -62,7 +62,7 @@ git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git pac
 mv $GITHUB_WORKSPACE/MI-R4A/2019-10-07_13.36-540p.jpg package/lean/luci-theme-infinityfreedom/luci-theme-infinityfreedom/files/htdocs/images/main_bg.jpg
 rm package/lean/luci-theme-infinityfreedom/luci-theme-infinityfreedom/files/htdocs/images/main_bg_5k.jpg
 
-git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
+#git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
 #git clone https://github.com/YL2209/luci-theme-ifit.git package/lean/luci-theme-ifit
 git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
 
@@ -104,7 +104,7 @@ sed -i 's/#f6f9fc/#E0DAD6/g' package/lean/luci-theme-argon_armygreen/htdocs/luci
 sed -i 's/#4fc352/#E0DAD6/g' package/lean/luci-theme-argon_armygreen/htdocs/luci-static/argon_armygreen/css/style.css
 #面板标题，如：导航栏-总览-系统 的颜色
 sed -i 's/#32325d/#E0DAD6/g' package/lean/luci-theme-argon_armygreen/htdocs/luci-static/argon_armygreen/css/style.css
-#面板标题，如：导航栏-总览-系统 触摸后按钮样式的颜色
+#面板标题，如：导航栏-总览-系统 触摸后按钮样式的颜
 sed -i 's/#F0F0F0/#E0DAD6/g' package/lean/luci-theme-argon_armygreen/htdocs/luci-static/argon_armygreen/css/style.css
 #复位 背景 - 边框 按钮样式的颜色
 sed -i 's/#f0ad4e/#E0DAD6/g' package/lean/luci-theme-argon_armygreen/htdocs/luci-static/argon_armygreen/css/style.css

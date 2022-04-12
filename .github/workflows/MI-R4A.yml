@@ -12,6 +12,9 @@
 name: MI-R4A
 
 on:
+  schedule:
+    - cron: "0 13 * * *"
+    - cron: "0 2 * * *"
   repository_dispatch:
   workflow_dispatch:
     inputs:

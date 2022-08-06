@@ -47,3 +47,5 @@ export imsize1=$(grep  -a -n -e 'define Device/xiaomi_mir3g-v2' target/linux/ram
 export imsize1=$(expr $imsize1 + 2)
 export imsize1=$(echo $imsize1"s")
 sed -i "$imsize1/IMAGE_SIZE := .*/IMAGE_SIZE := 16064k/" target/linux/ramips/image/mt7621.mk
+
+cat ../ramoops.dts >> target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-3g-v2.dtsi

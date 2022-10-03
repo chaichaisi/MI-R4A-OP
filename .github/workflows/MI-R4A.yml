@@ -26,11 +26,11 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: MI-R4A/R4A.conf.default
-  CONFIG_FILE: MI-R4A/R4A.config
-  DIY_P1_SH: MI-R4A/diy-part1.sh
-  DIY_P2_SH: MI-R4A/R4A.sh
-  DIY_P3_SH: MI-R4A/diy-part3.sh
+  FEEDS_CONF: R4A.conf.default
+  CONFIG_FILE: R4A.config
+  DIY_P1_SH: diy-part1.sh
+  DIY_P2_SH: R4A.sh
+  DIY_P3_SH: diy-part3.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false

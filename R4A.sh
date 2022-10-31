@@ -66,6 +66,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lea
 #git clone https://github.com/YL2209/luci-theme-ifit.git package/lean/luci-theme-ifit
 git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
+git clone https://github.com/zheshifandian/luci-app-adblock-plus package/lean/luci-app-adblock-plus
 
 # 修改luci-theme-argon_armygreen主题渐变色，16进制RGB
 #登录页面背景颜色 透明值

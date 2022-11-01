@@ -28,7 +28,7 @@ $DIY_P1_SH
 
 [ -e $REPO_PATH/files ] && mv $REPO_PATH/files files
 [ -e $CONFIG_FILE ] && cp $CONFIG_FILE .config
-sed -i s/.*=n//g .config
+#sed -i s/.*=n//g .config
 sed -i s/\#.*//g .config
 $DIY_P2_SH
 # $DIY_P3_SH

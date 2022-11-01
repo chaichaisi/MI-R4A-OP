@@ -27,18 +27,14 @@ $DIY_P1_SH
 ./scripts/feeds install -a
 
 [ -e $REPO_PATH/files ] && mv $REPO_PATH/files files
-[ -e ../$CONFIG_FILE ] && mv ../$CONFIG_FILE .config 
-cd openwrt
-../$DIY_P2_SH
-
+[ -e $CONFIG_FILE ] && mv $CONFIG_FILE .config 
+$DIY_P2_SH
 $DIY_P3_SH
 
-cd openwrt
 make defconfig
 make download -j8
 find dl -size -1024c -exec ls -l {} \;
 find dl -size -1024c -exec rm -f {} \;
 
-cd openwrt
 echo -e "$(nproc) thread compile"
 make --trace -j$(nproc) || make --trace -j1 || make --trace -j1 V=s

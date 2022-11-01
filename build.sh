@@ -27,9 +27,12 @@ $DIY_P1_SH
 ./scripts/feeds install -a
 
 [ -e $REPO_PATH/files ] && mv $REPO_PATH/files files
-[ -e $CONFIG_FILE ] && mv $CONFIG_FILE .config 
+[ -e $CONFIG_FILE ] && cp $CONFIG_FILE .config
+sed -i s/.*=n//g .config
+sed -i s/\#.*//g .config
 $DIY_P2_SH
-$DIY_P3_SH
+# $DIY_P3_SH
+mv $REPO_PATH/banner openwrt/package/base-files/files/etc/banner
 
 make defconfig
 make download -j8

@@ -9,11 +9,11 @@ REPO_PATH=$PWD
 TZ=Asia/Shanghai
 
 sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
-sudo -E apt -y update
-sudo -E apt -y install zip
-sudo -E apt -y install $(curl -fsSL git.io/depends-ubuntu-2004)
-sudo -E apt -y autoremove --purge
-sudo -E apt -y clean
+sudo -E apt-get -qq update
+sudo -E apt-get -qq install zip
+sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
+sudo -E apt-get -qq autoremove --purge
+sudo -E apt-get -qq clean
 sudo timedatectl set-timezone "$TZ"
 
 git clone $REPO_URL -b $REPO_BRANCH openwrt

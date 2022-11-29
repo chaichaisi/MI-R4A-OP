@@ -54,6 +54,7 @@ jobs:
         API_URL: ${{ github.api_url }}/repos/${{ github.repository }}/commits
         COMMIT_SHA: ${{ github.sha }}
       run: |
+        echo ${API_URL}/${COMMIT_SHA}
         COMMIT_NAME=$(curl -fsSL ${API_URL}/${COMMIT_SHA}) | python3 -c "import sys, json; print(json.load(sys.stdin)['commit']['message'])"
         echo "build_name=${COMMIT_NAME}" >> $GITHUB_OUTPUT
         echo ${COMMIT_NAME}

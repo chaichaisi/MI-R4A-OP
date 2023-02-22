@@ -191,6 +191,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.build_time.outputs.build_time }}-${{ steps.build_name.outputs.build_name }}
+        tag_name: ${{ steps.build_time.outputs.build_time }}
+        name: ${{ steps.build_name.outputs.build_name }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*

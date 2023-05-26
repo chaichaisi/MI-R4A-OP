@@ -1,4 +1,4 @@
-REPO_URL=https://hub.fgit.ml/coolsnowwolf/lede
+REPO_URL=https://github.com/coolsnowwolf/lede
 REPO_BRANCH=master
 FEEDS_CONF=$PWD/R4A.conf.default
 CONFIG_FILE=$PWD/R4A.config

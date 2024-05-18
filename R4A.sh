@@ -17,10 +17,10 @@
 #sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 
 # 修改主机名字，把YOU-R4A修改你喜欢的就行（不能纯数字或者使用中文）
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='R4A-G'' package/lean/default-settings/files/zzz-default-settings
+sed -i '/uci commit system/i\uci set system.@system[0].hostname='Chai'' package/lean/default-settings/files/zzz-default-settings
 
 # 版本号里显示一个自己的名字（ababwnq build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
-sed -i 's/OpenWrt /Build time $(TZ=UTC-8 date "+%Y.%m.%d-%H:%M:%S") @ WillowSauceR /g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/OpenWrt /Build time $(TZ=UTC-8 date "+%Y.%m.%d-%H:%M:%S") @ Chaichaisi /g' package/lean/default-settings/files/zzz-default-settings
 
 #更改主机型号，支持中文。 
 ##sed -i "s/Xiaomi Mi Router 4A Gigabit Edition/Xiaomi Mi Router 4A Gigabit Edition/g" target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit.dts
@@ -50,7 +50,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 #sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-turboacc/po/zh-cn/turboacc.po
 
 # 修改默认wifi名称ssid为XXKDB
-#sed -i 's/ssid=OpenWrt/ssid=OpenWrt/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/ssid=OpenWrt/ssid=老熊/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 修改默认wifi密码key为password
 #sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
